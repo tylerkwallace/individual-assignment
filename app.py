@@ -5,10 +5,9 @@ app = Flask(__name__)
 def home():                                    
     return render_template("index.html")         
 
-@app.route("/about")                                 
-def about():
-    name = request.args.get('name') if request.args.get('name') else "Hello World!"                            # method called hello
-    return render_template("about.html", aboutName=name)         
+@app.route("/page2")                                 
+def page2():                    
+    return render_template("page2.html")         
 
 @app.route("/contact")                           
 def contact():                           

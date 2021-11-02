@@ -6,7 +6,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
-    <title>Template</title>
+    <title>Page 1</title>
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
         <nav class="main">
             <ul class="nav">
               <li><a href="{{ url_for('home') }}">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
+              <li><a href="{{ url_for('page2') }}">Page 2</a></li>
               <li><a href="#">Page 3</a></li>
             </ul>
         </nav>
