@@ -51,6 +51,50 @@ header{
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.col{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 5px 0px 5px 0px; 
+    position: relative;
+    background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+}
+
+.purple-bg{
+    background-color: #5e35b1; 
+    color: white; 
+    border-radius: 0px;
+    background-image: none;
+}
+
+.row{
+    padding-top: 3px;
+    margin: 10px 0px 10px 0px;
+    position: relative;
+}
+
+.flag-new::before {
+    content: "New!";
+    background-color: #087f23;
+    position: absolute;
+    top: -.8rem;
+    left: -.8rem;
+    padding: .3rem .5rem;
+    display: inline-block;
+    color: #fff;
+    font-weight: both;
+    transform: rotate(-20deg); 
+}
+
+
 footer{
-    background-color: rgb(34, 34, 77);
+    background-color: rgba(0, 0, 0, 0.98);
+    background-image: url("https://gridbyexample.com/img/inflicted.png");
+    color: #fff;
+}
+
+footer .container {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 50px;
+    border-radius: 3px;
 }
