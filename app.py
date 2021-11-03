@@ -9,10 +9,9 @@ def home():
 def page2():                    
     return render_template("page2.html")         
 
-@app.route("/contact")                           
-def contact():                           
-    name = request.args.get('name') if request.args.get('name') else "Hello World!"                            # method called hello
-    return render_template("contact.html", aboutName=name)                     
+@app.route("/page3")                           
+def page3():                           # method called hello
+    return render_template("page3.html")                     
 
 if __name__ == "__main__":                      
     app.run(debug=True)                          
