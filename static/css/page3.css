@@ -2,8 +2,10 @@ body{
     background-color: black;
 }
 
-h1, h2, h3{
+h1, h2, h3, p,
+a.navbar-brand, .figure-caption{
     color: white;
+    font-family:fantasy;
 }
 
 .logo{
@@ -11,11 +13,11 @@ h1, h2, h3{
 }
 
 header{
-    background-color: aqua;
+    background-color: rgb(37, 37, 46);
 }
 
 .banner{
-    background-image: url("https://raw.githubusercontent.com/tylerkwallace/Images/master/Flames.png");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(70, 70, 70, 0.3)), url("https://raw.githubusercontent.com/tylerkwallace/Images/master/Flames.png");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,26 +25,32 @@ header{
     position: relative;
 }
 
-p{
-    color: white;
-}
 
 /* .navbar{
     color: white;
 } */
 
 a.navbar-brand{
-    color: white;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .figure-caption{
-    color: white;
     text-align: center;
 }
 
-figure{
-    height: 400px;
-    width: auto;
+hr{
+    color: gray;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+footer{
+    border: 1px solid white;
+    margin: 10px;
 }
